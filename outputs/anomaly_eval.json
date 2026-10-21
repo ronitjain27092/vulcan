@@ -1,0 +1,59 @@
+{
+  "real_series": {
+    "S1": {
+      "points": 4032,
+      "alerts": 2,
+      "alerts_per_day": 0.14
+    },
+    "S2": {
+      "points": 4719,
+      "alerts": 4,
+      "alerts_per_day": 0.24
+    },
+    "S3": {
+      "points": 1243,
+      "alerts": 0,
+      "alerts_per_day": 0.0
+    },
+    "S4": {
+      "points": 4032,
+      "alerts": 3,
+      "alerts_per_day": 0.21
+    }
+  },
+  "injected_benchmark": {
+    "mine": {
+      "windows_caught": "156/360",
+      "recall": 0.433,
+      "recall_by_kind": {
+        "spike": 0.424,
+        "surge": 0.444,
+        "dip": 0.432
+      },
+      "median_delay_min": 0.0,
+      "false_alarms_per_day": 0.18
+    },
+    "naive_3sigma": {
+      "windows_caught": "219/360",
+      "recall": 0.608,
+      "recall_by_kind": {
+        "spike": 0.805,
+        "surge": 0.831,
+        "dip": 0.178
+      },
+      "median_delay_min": 0.0,
+      "false_alarms_per_day": 2.12
+    },
+    "naive_8sigma": {
+      "windows_caught": "162/360",
+      "recall": 0.45,
+      "recall_by_kind": {
+        "spike": 0.619,
+        "surge": 0.637,
+        "dip": 0.085
+      },
+      "median_delay_min": 0.0,
+      "false_alarms_per_day": 0.76
+    }
+  }
+}

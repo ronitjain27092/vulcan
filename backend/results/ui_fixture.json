@@ -1,0 +1,375 @@
+{
+  "note": "Synthetic data for the assessment. Build the UI against this file. Do not invent other numbers on the overview.",
+  "overview": {
+    "sources": 6,
+    "alarms_open": 412,
+    "devices": 902,
+    "records": 1284,
+    "multi_source_devices": 211,
+    "paged": 14,
+    "held": 398,
+    "held_percent": 97,
+    "duplicates_merged": 137,
+    "silent_sources": 1
+  },
+  "sources": [
+    {
+      "key": "nnmi",
+      "chip": "NNMi",
+      "name": "OpenText NNMi",
+      "cls": "Enterprise NMS",
+      "connection": "REST pull, northbound traps",
+      "scale": "Critical / Major / Minor / Warning / Normal",
+      "alarms": 171,
+      "last_event": "12s",
+      "health": "healthy"
+    },
+    {
+      "key": "catc",
+      "chip": "CATC",
+      "name": "Cisco Catalyst Center",
+      "cls": "SDN controller",
+      "connection": "REST API, event webhooks",
+      "scale": "P1 to P4",
+      "alarms": 96,
+      "last_event": "8s",
+      "health": "healthy"
+    },
+    {
+      "key": "cvp",
+      "chip": "CVP",
+      "name": "Arista CloudVision",
+      "cls": "Fabric and telemetry",
+      "connection": "Streaming telemetry (gNMI)",
+      "scale": "Streaming state",
+      "alarms": 44,
+      "last_event": "14m",
+      "health": "silent"
+    },
+    {
+      "key": "fw",
+      "chip": "FW",
+      "name": "Firewall manager",
+      "cls": "Firewall manager",
+      "connection": "Manager API, syslog",
+      "scale": "Syslog 0 to 7",
+      "alarms": 41,
+      "last_event": "34s",
+      "health": "healthy"
+    },
+    {
+      "key": "ise",
+      "chip": "ISE",
+      "name": "Cisco ISE",
+      "cls": "Access control",
+      "connection": "pxGrid, syslog",
+      "scale": "Pass / Fail",
+      "alarms": 38,
+      "last_event": "21s",
+      "health": "healthy"
+    },
+    {
+      "key": "zbx",
+      "chip": "ZBX",
+      "name": "Zabbix",
+      "cls": "Server monitor",
+      "connection": "REST API",
+      "scale": "Severity 0 to 5",
+      "alarms": 22,
+      "last_event": "47s",
+      "health": "healthy"
+    }
+  ],
+  "sites": [
+    {
+      "name": "HUB-NORTH",
+      "alarms": 68
+    },
+    {
+      "name": "HUB-SOUTH",
+      "alarms": 54
+    },
+    {
+      "name": "HUB-EAST",
+      "alarms": 47
+    },
+    {
+      "name": "HUB-WEST",
+      "alarms": 41
+    },
+    {
+      "name": "STN-07",
+      "alarms": 33
+    },
+    {
+      "name": "STN-02",
+      "alarms": 27
+    },
+    {
+      "name": "STN-11",
+      "alarms": 24
+    },
+    {
+      "name": "STN-03",
+      "alarms": 21
+    },
+    {
+      "name": "STN-09",
+      "alarms": 19
+    },
+    {
+      "name": "STN-12",
+      "alarms": 17
+    },
+    {
+      "name": "STN-05",
+      "alarms": 14
+    },
+    {
+      "name": "STN-01",
+      "alarms": 12
+    },
+    {
+      "name": "STN-14",
+      "alarms": 10
+    },
+    {
+      "name": "STN-04",
+      "alarms": 9
+    },
+    {
+      "name": "STN-06",
+      "alarms": 7
+    },
+    {
+      "name": "STN-10",
+      "alarms": 4
+    },
+    {
+      "name": "STN-08",
+      "alarms": 3
+    },
+    {
+      "name": "STN-13",
+      "alarms": 2
+    }
+  ],
+  "incidents": [
+    {
+      "priority": "P1",
+      "device": "HUBN-CORE-SW-02",
+      "state": "Down",
+      "title": "Core switch down",
+      "sources": [
+        "NNMi",
+        "CATC",
+        "ISE"
+      ],
+      "site": "HUB-NORTH",
+      "held_under": 23,
+      "age": "14m"
+    },
+    {
+      "priority": "P1",
+      "device": "cvp-collector-01",
+      "state": "Unknown",
+      "title": "Source silent: Arista CloudVision",
+      "sources": [
+        "CVP"
+      ],
+      "site": "HUB-EAST",
+      "held_under": 0,
+      "age": "13m"
+    },
+    {
+      "priority": "P2",
+      "device": "HUBS-FW-PAIR-01",
+      "state": "Warning",
+      "title": "Firewall HA failover",
+      "sources": [
+        "FW",
+        "ZBX"
+      ],
+      "site": "HUB-SOUTH",
+      "held_under": 4,
+      "age": "31m"
+    },
+    {
+      "priority": "P2",
+      "device": "HUBE-WAN-RTR-01",
+      "state": "Down",
+      "title": "Site to site tunnel down",
+      "sources": [
+        "FW",
+        "NNMi"
+      ],
+      "site": "HUB-EAST",
+      "held_under": 2,
+      "age": "48m"
+    },
+    {
+      "priority": "P2",
+      "device": "ISE-PSN-03",
+      "state": "Warning",
+      "title": "Authentication service degraded",
+      "sources": [
+        "ISE",
+        "ZBX",
+        "NNMi"
+      ],
+      "site": "HUB-WEST",
+      "held_under": 6,
+      "age": "66m"
+    },
+    {
+      "priority": "P2",
+      "device": "STN07-AGG-SW-01",
+      "state": "Unusual",
+      "title": "Uplink interface errors rising",
+      "sources": [
+        "CVP",
+        "NNMi"
+      ],
+      "site": "STN-07",
+      "held_under": 0,
+      "age": "82m"
+    },
+    {
+      "priority": "P2",
+      "device": "ZBX-APP-SRV-14",
+      "state": "Warning",
+      "title": "Disk space low on log volume",
+      "sources": [
+        "ZBX"
+      ],
+      "site": "STN-02",
+      "held_under": 0,
+      "age": "2h"
+    },
+    {
+      "priority": "P3",
+      "device": "STN03-ACC-SW-07",
+      "state": "Warning",
+      "title": "Power supply redundancy lost",
+      "sources": [
+        "NNMi"
+      ],
+      "site": "STN-03",
+      "held_under": 0,
+      "age": "3h"
+    },
+    {
+      "priority": "P3",
+      "device": "STN09-WLC-01",
+      "state": "Down",
+      "title": "Access point group unreachable",
+      "sources": [
+        "CATC"
+      ],
+      "site": "STN-09",
+      "held_under": 9,
+      "age": "3h"
+    },
+    {
+      "priority": "P3",
+      "device": "HUBW-SPINE-02",
+      "state": "Unusual",
+      "title": "Fabric link flapping",
+      "sources": [
+        "CVP",
+        "NNMi"
+      ],
+      "site": "HUB-WEST",
+      "held_under": 0,
+      "age": "4h"
+    },
+    {
+      "priority": "P3",
+      "device": "STN12-ACC-SW-03",
+      "state": "Unusual",
+      "title": "Configuration drift detected",
+      "sources": [
+        "CATC",
+        "NNMi"
+      ],
+      "site": "STN-12",
+      "held_under": 0,
+      "age": "5h"
+    }
+  ],
+  "hero_incident": {
+    "device": "HUBN-CORE-SW-02",
+    "title": "Core switch down",
+    "site": "HUB-NORTH",
+    "serial": "FOC2418L0QX",
+    "management_ip": "10.20.0.12",
+    "children": 23,
+    "reports": [
+      {
+        "source": "NNMi",
+        "name": "hubn-core-sw02.net.local",
+        "alarm": "Node Down",
+        "native": "Critical",
+        "priority": "P1"
+      },
+      {
+        "source": "CATC",
+        "name": "HUBN-CORE-SW-02",
+        "alarm": "Device unreachable",
+        "native": "P1",
+        "priority": "P1"
+      },
+      {
+        "source": "ISE",
+        "name": "10.20.0.12",
+        "alarm": "Network device unreachable",
+        "native": "Fail",
+        "priority": "P1"
+      }
+    ],
+    "decision": {
+      "what": "Outage",
+      "confidence": 92,
+      "should": "Page someone now",
+      "should_confidence": 96,
+      "evidence": "3 independent sources agree. NNMi root-cause analysis names this device as the parent of 23 downstream alarms."
+    },
+    "timeline": [
+      [
+        "15m",
+        "Held",
+        "OpenText NNMi reports Node Down. 1 of 2 confirmations needed."
+      ],
+      [
+        "14m",
+        "Confirmed",
+        "Cisco Catalyst Center reports the same device unreachable 40 seconds later."
+      ],
+      [
+        "14m",
+        "Resolved to one device",
+        "Three source names matched on serial FOC2418L0QX and management IP 10.20.0.12."
+      ],
+      [
+        "14m",
+        "Opened",
+        "P1 Core switch down, HUB-NORTH."
+      ],
+      [
+        "13m",
+        "Deduplicated across sources",
+        "Cisco ISE alarm joined to this incident. No second page."
+      ],
+      [
+        "13m",
+        "Children attached",
+        "23 downstream alarms held under this incident."
+      ],
+      [
+        "13m",
+        "Paged",
+        "On-call network lead."
+      ]
+    ]
+  }
+}

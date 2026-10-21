@@ -1,0 +1,152 @@
+{
+ "total_errors": 36,
+ "cause_counts_all": {
+  "no model code in the name on one side of the true pair": 16,
+  "true pair has differently written model codes": 9,
+  "one-to-one assignment pushed it elsewhere / near-duplicate listing": 7,
+  "true match not in candidates (blocking miss)": 2,
+  "wrong item shares a model code (family/accessory with same code)": 2
+ },
+ "sample": [
+  {
+   "cause": "one-to-one assignment pushed it elsewhere / near-duplicate listing",
+   "abt": "Panasonic 27' Stainless Steel Microwave Trim Kit - TK903SS",
+   "predicted": "Panasonic NNSD767S 1.6 cu. ft. Stainless Steel Countertop Microwave Oven",
+   "truth": "PAN NN-TK903S MICROWAVE OVEN .08 CU. FT.",
+   "conf": 0.81
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "Sony DSCH2 Soft Carrying Camera Case - Black Finish - LCSCSH",
+   "predicted": "Sony LCS Soft Carrying Case - LCSCST",
+   "truth": "Sony LCS-CSH Soft Camera Case - LCSCSH",
+   "conf": 0.81
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "Nikon Pink 10 Megapixel COOLPIX Digital Camera - COOLPIXS60PNK",
+   "predicted": "Nikon Coolpix P80 Digital Camera - 26114",
+   "truth": "Nikon COOLPIX S60 10 Megapixel Digital Camera w/ 5x Optical Zoom, Optical VR Image Stabilization, 3.5' High Res Touch Panel LCD, HD Pictmotion Slide Shows, & Autofocus and Auto Exposure - Pink - 26132",
+   "conf": 0.81
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "Garmin 010-10723-03 Nuvi Suction Cup Mount - 0101072303",
+   "predicted": "Garmin Suction Cup Mount - 010-10936-00",
+   "truth": "Garmin Vehicle Suction Cup mount",
+   "conf": 0.6
+  },
+  {
+   "cause": "true pair has differently written model codes",
+   "abt": "iHome Black Clock Radio Audio System For iPod - IH9BR",
+   "predicted": "iHome IP47BR Bluetooth Clock Radio & Speakerphone for iPhone & iPod - iP47BR",
+   "truth": "IH9B6R BLACK ALARM CLOCK F/IPODPERPCHARGES DOCKED IPOD REMOTE CONTROL",
+   "conf": 0.81
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "LG LFC25770ST 25.0 Cu. Ft. Stainless Steel French Door Bottom Freezer Refrigerator - LFC25770SS",
+   "predicted": "LG 24.7 cu. ft. Stainless Steel French Door Bottom Mount Refrigerator",
+   "truth": "LG 25.0 Cu.Ft. Total Capacity",
+   "conf": 0.81
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "Garmin GPS Carrying Case - Black Finish - 0101070400",
+   "predicted": "Garmin Leather GPS Case",
+   "truth": "Garmin Lightweight GPS Case - 010-10704-00",
+   "conf": 0.81
+  },
+  {
+   "cause": "true pair has differently written model codes",
+   "abt": "Audiovox Xpress XM Satellite Radio Receiver Home Kit - XMH10A",
+   "predicted": "Audiovox Satellite Radio Tuner",
+   "truth": "Audiovox XMH10 Home Docking Kit",
+   "conf": 0.81
+  },
+  {
+   "cause": "one-to-one assignment pushed it elsewhere / near-duplicate listing",
+   "abt": "Panasonic Stainless Steel Countertop Microwave Oven - NNSD377SS",
+   "predicted": "Panasonic NNSD767S 1.6 cu. ft. Stainless Steel Countertop Microwave Oven",
+   "truth": "Panasonic NN-SD377S 0.8 cu.ft. 800 WATT Microwave Oven",
+   "conf": 0.81
+  },
+  {
+   "cause": "one-to-one assignment pushed it elsewhere / near-duplicate listing",
+   "abt": "Uniden 5.8GHz Accessory Handset And Charger - TCX905",
+   "predicted": "Uniden TCX905 Cordless Handset - TCX905",
+   "truth": "Uniden TCX905 Tru-Digital Expansion Handset With Caller ID",
+   "conf": 0.98
+  },
+  {
+   "cause": "one-to-one assignment pushed it elsewhere / near-duplicate listing",
+   "abt": "Canon Black EOS 50D Digital SLR Camera Body - EOS50DBODY",
+   "predicted": "Canon EOS 40D Digital SLR Camera - 1901B004",
+   "truth": "Canon EOS 50D 15 Megapixel SLR Digital Camera with Live View & Face Detection, 3' LCD, 6.3fps & DIGIC 4 Image Processor - Body Only - 2807B006",
+   "conf": 0.81
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "BlueAnt Bluetooth Voice Control Headset - V1",
+   "predicted": "BlueAnt Wireless Z9i Bluetooth Headset - Black - US-091010",
+   "truth": "BLUEANT BLUETOOTH HS DUAL MIC NIC - 091004",
+   "conf": 0.86
+  },
+  {
+   "cause": "true pair has differently written model codes",
+   "abt": "Sony Pink Earbud Style Headphones - MDREX55P",
+   "predicted": "Sony MDREX81LP Comfort Fit Ear Hanger Headphones- Choose Color (Black)",
+   "truth": "Ex Series Earbuds Pnk - MDR EX55/PNK",
+   "conf": 0.6
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "Sanus 13' - 30' VisionMount Flat Panel TV Silver Wall Mount - VMFS",
+   "predicted": "Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B",
+   "truth": "Sanus Flat Panel TV Wall Mount - VMF",
+   "conf": 0.81
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "Garmin Vehicle Suction Cup Mount - 0101093600",
+   "predicted": "Garmin Vehicle Suction Cup mount",
+   "truth": "Garmin Suction Cup Mount - 010-10936-00",
+   "conf": 0.98
+  },
+  {
+   "cause": "true pair has differently written model codes",
+   "abt": "Transcend 8GB SDHC Card And Compact Card Reader - TS8GSDHC6S5W",
+   "predicted": "Transcend 16GB SDHC Card & Compact Card Reader S5 - TS16GSDHC6-S5W",
+   "truth": "Transcend 8GB Secure Digital High Capacity (SDHC) Card - Class 6 - TS8GSDHC6",
+   "conf": 0.81
+  },
+  {
+   "cause": "true pair has differently written model codes",
+   "abt": "Sony White Earbud Style Headphones - MDREX55WH",
+   "predicted": "Sony MDREX81LP Comfort Fit Ear Hanger Headphones- Choose Color (Black)",
+   "truth": "Ex Series Earbuds Wht - MDR EX55/WHI",
+   "conf": 0.6
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "LG 25.0 Cu. Ft. Titanium French Door Bottom Freezer Refrigerator - LFC25770TT",
+   "predicted": "LG 24.7 cu. ft. Stainless Steel French Door Bottom Mount Refrigerator",
+   "truth": "LG 25.0 Cu.Ft. Total Capacity",
+   "conf": 0.81
+  },
+  {
+   "cause": "wrong item shares a model code (family/accessory with same code)",
+   "abt": "Canon Black EOS 50D Digital SLR Camera With 28-135MM Lens - 50D28135",
+   "predicted": "Canon EOS 40D Digital SLR Camera with EF 28-135mm f/3.5-5.6 IS USM Lens - 1901B017",
+   "truth": "Canon EOS 50D 15 Megapixel SLR Digital Camera w/28-135MM IS USM Lens, Live View & Face Detection, 3' LCD, 6.3fps, DIGIC 4 Image Processor & HDMI output - 2807B005",
+   "conf": 0.98
+  },
+  {
+   "cause": "no model code in the name on one side of the true pair",
+   "abt": "LG LDC22720ST 22 Cu. Ft. Smooth White Bottom Freezer Refrigerator - LDC22720SS",
+   "predicted": "LG 25 CF Refrigerator 3 Door White Tall",
+   "truth": "LG 22 Cu.Ft. Total Capacity",
+   "conf": 0.81
+  }
+ ]
+}

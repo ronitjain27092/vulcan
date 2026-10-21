@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: vulcan
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DB_PATH
+        value: /tmp/vulcan.db   # free tier disk is ephemeral; see README ("what I'm unsure of")

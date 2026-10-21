@@ -1,0 +1,10 @@
+node_modules/
+# ui/dist built in Docker
+*.db
+__pycache__/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
